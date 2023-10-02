@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-    background-color: white;
+    background-color: rgb(243, 243, 243);
 }
 
 .header-image{
@@ -92,3 +92,4 @@ body {
 .food-name {
     font-weight: bold;
 }
+
