@@ -26,11 +26,69 @@ body {
     width: 55rem;
 
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     background-color: white;
 }
 
 .header-image{
     margin-top: 1rem;
+}
+
+
+
+
+/* Styling the food options containers */
+
+.main-course-options-container, .options-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1.3rem;
+}
+
+
+.main-course, .portions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+/* Food Card */
+.food-options-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+/* Image Container */
+.image-container{
+    width: 11rem;
+    height: 18rem;
+    overflow: hidden;
+}
+
+.image-container > img {  
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.food-name {
+    font-weight: bold;
 }
