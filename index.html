@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+
+
+
     <title>Menu Page</title>
 </head>
 <body>
@@ -78,13 +81,24 @@
         <div class="client-info">
             <h2>Dados Pessoais</h2>
 
-            <input type="text" placeholder="Digite o seu nome">
-            <input type="tel" placeholder="Digite o seu telefone">
-            <input type="email" placeholder="Digite o seu email">
+            <input id="name" type="text" placeholder="Digite o seu nome">
+            <input id="phone_number" type="tel" placeholder="Digite o seu telefone">
+            <input id="email" type="email" placeholder="Digite o seu email">
         </div>
 
         <button>Calcular</button>
 
     </div>
+
+    <!--Scripts for the page-->
+    <script src="./src/index.js"></script>
+    <script src="./src/JQuery.js"></script>
+    <script src="./src/maskPlugin.js"></script>
+
+    
+    <!--Script that adds a mask to the phone input-->
+    <script>
+        $('#phone_number').mask('(00) 00000-0000');
+    </script>
 </body>
 </html>
