@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-
+    <link rel="stylesheet" href="./styles/quantity.css">
 
 
     <title>Menu Page</title>
@@ -23,26 +23,42 @@
         <div class="main-course">
             <h2>Prato Principal</h2>
             <p>Todos os pratos acompanham arroz, feijão e a sobremesa do dia</p>
-
             <div class="main-course-options-container">
                 <div class="food-options-card" id="fried-chiken">
                     <div class="image-container"><img src="./assets/fried chicken.jpg"></div>
                     <p class="food-name">Frango Frito</p>
-                    <p class="price">R$ 10,00</p>
+                    <p class="price">R$ 19,99</p>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input readonly id="0" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
                 <div class="food-options-card" id="prime-rib">
                     <div class="image-container"><img src="./assets/prime rib.jpg"></div>
                     <p class="food-name">Contra-Filé</p>
-                    <p class="price">R$ 10,00</p>
+                    <p class="price">R$ 29,99</p>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input readonly id="1" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
                 <div class="food-options-card" id="strogonoff">
                     <div class="image-container"><img src="./assets/strogonoff.jpg"></div>
                     <p class="food-name">Strogonoff</p>
-                    <p class="price">R$ 10,00</p>
-                </div>
+                    <p class="price">R$ 21,99</p>
 
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input readonly id="2" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -57,36 +73,55 @@
                 <div class="food-options-card" id="cheese">
                     <div class="image-container"><img src="./assets/cheese.jpg"></div>
                     <p class="food-name">Porção de Queijo</p>
-                    <p class="price">R$ 10,00</p>
+                    <p class="price">R$ 11,99</p>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input readonly id="3" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
                 <div class="food-options-card" id="veggies">
                     <div class="image-container"><img src="./assets/veggies.jpg"></div>
                     <p class="food-name">Legumes</p>
-                    <p class="price">R$ 10,00</p>
+                    <p class="price">R$ 5,99</p>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input readonly id="4" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
 
                 <div class="food-options-card" id="sausage">
                     <div class="image-container"><img src="./assets/sausage.jpg"></div>
                     <p class="food-name">Calabresa</p>
-                    <p class="price">R$ 10,00</p>
+                    <p class="price">R$ 9,99</p>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus">
+                        <input readonly id="5" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                        <input type="button" value="+" class="plus">
+                    </div>
                 </div>
-
-
             </div>
-
         </div>
 
         <!--Client INFO--> 
         <div class="client-info">
             <h2>Dados Pessoais</h2>
 
-            <input id="name" type="text" placeholder="Digite o seu nome">
-            <input id="phone_number" type="tel" placeholder="Digite o seu telefone">
-            <input id="email" type="email" placeholder="Digite o seu email">
+            <input required class="info_input" id="client-name" type="text" placeholder="Digite o seu nome">
+            <input required class="info_input" id="phone_number" type="tel" placeholder="Digite o seu telefone">
+            <input required class="info_input" id="email" type="email" placeholder="Digite o seu email">
         </div>
 
-        <button>Calcular</button>
+        <button id="calculate_button" >Calcular</button>
+
+        <div id="client_order">
+
+        </div>
 
     </div>
 
@@ -94,6 +129,7 @@
     <script src="./src/index.js"></script>
     <script src="./src/JQuery.js"></script>
     <script src="./src/maskPlugin.js"></script>
+    <script src="./src/quantity.js"></script>
 
     
     <!--Script that adds a mask to the phone input-->

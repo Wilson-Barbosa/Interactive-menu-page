@@ -11,8 +11,6 @@ body {
 }
 
 
-
-
 /* Styling the PAGE CONTAINER */
 
 #page {
@@ -107,7 +105,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-input {
+.info_input {
     width: 30rem;
     padding: 0.9rem;
     border-radius: 5px;
@@ -115,7 +113,7 @@ input {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-button {
+#calculate_button {
     width: 42.7rem;
     height: 2.5rem;
     margin: 1rem;
@@ -131,6 +129,20 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+#calculate_button:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* client's order output */
+
+#client_order{
+    margin-right: 12rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    font-size: 1.3rem;
+}
+
+#client_order > ul {
+    margin-left: 2rem;
 }
